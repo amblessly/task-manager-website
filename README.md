@@ -1,9 +1,8 @@
 # Full-Stack Task Management Dashboard
 
-A complete, working **task management dashboard** built with **Node.js (Next.js)**, **React**, **TypeScript**, and **Tailwind CSS**.
-This repository focuses on the **frontend and API proxy layer** and works fully out of the box using an **intelligent mock fallback system**.
+A complete and functional **task management dashboard** created with **Node.js (Next.js)**, **React**, **TypeScript**, and **Tailwind CSS**. The main focus of this repository is on the **frontend and API proxy layer** which is usable right away with the help of an **intelligent mock fallback system** that can be easily deployed.
 
-> ⚠️ **Note:** This repository does **NOT** include a Java Spring Boot backend. You do **not** need to run `cd backend` or `mvn spring-boot:run` to use this project.
+> ⚠️ **Note:** A Java Spring Boot backend is **NOT** included in this repository. There's no need to execute `cd backend` or `mvn spring-boot:run` during the project setup.
 
 ---
 
@@ -18,16 +17,16 @@ This repository focuses on the **frontend and API proxy layer** and works fully 
 
 ## 🛠️ Architecture
 
-The application follows a modern layered architecture:
+Modern layered architecture is manually adopted by the application.
 
 1. **Frontend (React)**
-   A responsive dashboard with real-time UI updates and modern UX patterns.
+   A perfect dashboard that supports multiple screen sizes and offers UI updates in real time together with the use of advanced UX patterns.
 
 2. **Edge API (Node.js / Next.js)**
-   Acts as a gateway/proxy. Includes an **intelligent mock fallback system**—if no backend API is available, the app remains fully functional using an in-memory mock data store.
+   A gateway/proxy that is responsible for the connection. The system includes an **intelligent mock fallback**—if the backend API is not available, the app is still functional and uses an in-memory data store.
 
 3. **Backend (Optional / External)**
-   A Java Spring Boot REST API *can* be connected later, but it is **not part of this repository**.
+   A Java Spring Boot REST API *can* be integrated later, but it is **not part of this repository**.
 
 ---
 
@@ -41,62 +40,61 @@ The application follows a modern layered architecture:
 
 ---
 
-### 2. Running the Application
+### 2. Application Launching
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open `http://localhost:3000` to view the dashboard.
+Visit `http://localhost:3000` to see the dashboard.
 
-✅ The app runs immediately using **mock data**.
-✅ All features (CRUD, stats, UI) work without any backend.
+✅ The application starts right away with **mock data**.
+✅ All functionalities (CRUD, stats, UI) are available without any backend.
 
 ---
 
 ### 3. Backend Integration (Optional)
 
 If you have a **separate** Spring Boot backend:
+* Execute it on `http://localhost:8080`
+* Confirm that the REST endpoints related to the task are functioning
+* The application will seamlessly transition from the mock mode to the live backend mode
 
-* Run it on `http://localhost:8080`
-* Ensure task-related REST endpoints are available
-* The app will automatically switch from mock mode to live backend mode
-
-> ⚠️ Backend setup is **outside the scope** of this repository.
-
----
-
-## ✨ Key Features
-
-* **Full CRUD**: Create, read, update, and delete tasks
-* **Smart Fallback**: Automatic mock mode when backend is unavailable
-* **Real-time Stats**: Live calculation of task states
-* **Modern UI**: Dark mode dashboard with filters and dialogs
+> ⚠️ Backend installation is **not included** in the context of this repository.
 
 ---
 
-## 📁 Project Structure
+## ✨ Highlights
+
+* **Full CRUD**: Operations on tasks of create, read, update, and delete
+* **Smart Fallback**: Automatic mock mode when backend becomes inaccessible
+* **Real-time Stats**: Instantaneous computation of task states
+* **Modern UI**: Dark mode interface with filters and popups
+
+---
+
+## 📁 Layout of the Project
 
 * `/app`: Next.js pages and API routes (Node.js/TypeScript)
-* `/components`: Reusable React components
-* `/hooks`: Custom React hooks
-* `/lib`: Shared types and mock data logic
+* `/components`: Commonly used React components
+* `/hooks`: Customized React hooks
+* `/lib`: Types and mock data logic shared across
 
 ---
 
-## 📸 Screenshots
+## 📸 Images
 
 ### Dashboard Overview
 ![Dashboard](docs/images/dashboard.png)
 
-> Main dashboard showing task list and statistics.  
-> Uses mock data automatically when backend is not available.
+> The central dashboard displays the list of tasks and the corresponding statistics.  
+> When the backend is not reachable, it automatically resorts to mock data.
 
 ### Add Task
 ![Add Task](docs/images/addtask.png)
 
-> Modal form for creating a new task with title, description, and priority.
+> New task can be created through a modal form by providing the title, description, and priority.
 
 ---
 
