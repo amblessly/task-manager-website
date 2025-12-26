@@ -1,4 +1,4 @@
-# Full-Stack Task Management Dashboard
+# Task Management
 
 A complete and functional **task management dashboard** created with **Node.js (Next.js)**, **React**, **TypeScript**, and **Tailwind CSS**. The main focus of this repository is on the **frontend and API proxy layer** which is usable right away with the help of an **intelligent mock fallback system** that can be easily deployed.
 
