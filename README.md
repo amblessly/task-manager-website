@@ -25,9 +25,6 @@ Modern layered architecture is manually adopted by the application.
 2. **Edge API (Node.js / Next.js)**
    A gateway/proxy that is responsible for the connection. The system includes an **intelligent mock fallback**—if the backend API is not available, the app is still functional and uses an in-memory data store.
 
-3. **Backend (Optional / External)**
-   A Java Spring Boot REST API *can* be integrated later, but it is **not part of this repository**.
-
 ---
 
 ## 📖 How to Use
@@ -54,17 +51,6 @@ Visit `http://localhost:3000` to see the dashboard.
 
 ---
 
-### 3. Backend Integration (Optional)
-
-If you have a **separate** Spring Boot backend:
-* Execute it on `http://localhost:8080`
-* Confirm that the REST endpoints related to the task are functioning
-* The application will seamlessly transition from the mock mode to the live backend mode
-
-> ⚠️ Backend installation is **not included** in the context of this repository.
-
----
-
 ## ✨ Highlights
 
 * **Full CRUD**: Operations on tasks of create, read, update, and delete
@@ -86,7 +72,7 @@ If you have a **separate** Spring Boot backend:
 ## 📸 Images
 
 ### Dashboard Overview
-![Dashboard](docs/images/dashboard.png)
+![Dashboard](docs/images/dashboard.png) ![Add Task](docs/images/addtask.png)
 
 > The central dashboard displays the list of tasks and the corresponding statistics.  
 > When the backend is not reachable, it automatically resorts to mock data.
@@ -97,7 +83,3 @@ If you have a **separate** Spring Boot backend:
 > New task can be created through a modal form by providing the title, description, and priority.
 
 ---
-
-## 📄 License
-
-MIT
