@@ -85,6 +85,21 @@ If you have a **separate** Spring Boot backend:
 
 ---
 
+## 📸 Screenshots
+
+### Dashboard Overview
+![Dashboard](docs/images/dashboard.png)
+
+> Main dashboard showing task list and statistics.  
+> Uses mock data automatically when backend is not available.
+
+### Add Task
+![Add Task](docs/images/addtask.png)
+
+> Modal form for creating a new task with title, description, and priority.
+
+---
+
 ## 📄 License
 
 MIT
