@@ -72,7 +72,7 @@ Visit `http://localhost:3000` to see the dashboard.
 ## 📸 Images
 
 ### Dashboard Overview
-![Dashboard](docs/images/dashboard.png) ![Add Task](docs/images/addtask.png)
+![Dashboard](docs/images/dashboard.png)
 
 > The central dashboard displays the list of tasks and the corresponding statistics.  
 > When the backend is not reachable, it automatically resorts to mock data.
